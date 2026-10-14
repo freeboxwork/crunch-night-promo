@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRUNCH NIGHT (야근) — 1.44MB 디스켓 속 야근 서바이벌</title>
+<meta name="description" content="밤 10시, 버그가 살아 움직인다. 1.44MB 디스켓에 담긴 야근 서바이벌 게임 CRUNCH NIGHT 홍보 영상.">
+<meta property="og:title" content="CRUNCH NIGHT (야근) — 공식 홍보 영상">
+<meta property="og:description" content="밤 10시, 버그가 살아 움직인다. 1.44MB 디스켓에 담긴 야근 서바이벌.">
+<meta property="og:type" content="video.other">
+<meta property="og:image" content="https://freeboxwork.github.io/crunch-night-promo/poster.jpg">
+<meta property="og:video" content="https://freeboxwork.github.io/crunch-night-promo/promo.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1280">
+<meta property="og:video:height" content="720">
+<style>
+  :root { --green:#5aeba9; --dim:#8cc8b9; --bg:#04070c; --panel:#0a1018; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body {
+    background:var(--bg); color:var(--dim);
+    font-family:"DungGeunMo","Galmuri11",ui-monospace,Consolas,"Malgun Gothic",monospace;
+    min-height:100vh; display:flex; flex-direction:column; align-items:center;
+    padding:32px 16px 48px;
+  }
+  /* CRT 배경 스캔라인 */
+  body::before {
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:3;
+    background:repeating-linear-gradient(0deg, transparent 0 2px, rgba(0,0,0,.18) 2px 3px);
+  }
+  header { text-align:center; margin-bottom:20px; }
+  .prompt { color:var(--green); font-size:14px; letter-spacing:1px; opacity:.85; }
+  h1 {
+    color:var(--green); font-size:clamp(26px,6vw,44px); letter-spacing:2px; margin:8px 0 6px;
+    text-shadow:0 0 14px rgba(90,235,169,.45), 2px 0 0 rgba(255,60,120,.35), -2px 0 0 rgba(60,160,255,.35);
+  }
+  .sub { font-size:14px; opacity:.9; }
+  .frame {
+    width:min(960px,100%); background:var(--panel); border:2px solid #1d3b33;
+    border-radius:10px; padding:10px; box-shadow:0 0 40px rgba(90,235,169,.12);
+  }
+  .titlebar { display:flex; gap:6px; align-items:center; padding:2px 4px 10px; font-size:12px; color:#4c7a6d; }
+  .dot { width:10px; height:10px; border-radius:50%; }
+  video { width:100%; display:block; border-radius:4px; background:#000; }
+  .meta {
+    width:min(960px,100%); display:flex; flex-wrap:wrap; gap:10px; justify-content:center;
+    margin-top:18px; font-size:13px;
+  }
+  .chip { border:1px solid #1d3b33; border-radius:999px; padding:6px 14px; background:#0a1410; }
+  .chip b { color:var(--green); font-weight:normal; }
+  .cta { margin-top:26px; text-align:center; font-size:15px; }
+  .cta .cmd { color:var(--green); }
+  .caret { display:inline-block; width:9px; height:18px; background:var(--green); vertical-align:-3px; animation:blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity:0; } }
+  footer { margin-top:34px; font-size:12px; opacity:.55; text-align:center; line-height:1.8; }
+  a { color:var(--green); }
+</style>
+</head>
+<body>
+  <header>
+    <div class="prompt">A:\&gt; crunch_night.exe</div>
+    <h1>CRUNCH NIGHT</h1>
+    <div class="sub">야근 — 1.44MB 디스켓에 담긴 야근 서바이벌</div>
+  </header>
+
+  <div class="frame">
+    <div class="titlebar">
+      <span class="dot" style="background:#ff5f56"></span>
+      <span class="dot" style="background:#ffbd2e"></span>
+      <span class="dot" style="background:#27c93f"></span>
+      <span>promo.mp4 — 00:40 · 1280x720</span>
+    </div>
+    <video src="promo.mp4" poster="poster.jpg" controls playsinline preload="metadata"></video>
+  </div>
+
+  <div class="meta">
+    <span class="chip">용량 <b>1.44MB</b> 디스켓 규격</span>
+    <span class="chip"><b>소프트웨어 렌더러</b> · 외부 엔진 없음</span>
+    <span class="chip"><b>4채널 칩튠</b> 사운드</span>
+    <span class="chip">순수 <b>Win32 API</b></span>
+  </div>
+
+  <div class="cta">
+    밤 10시, 버그가 살아 움직인다.<br>
+    아침 해가 뜰 때까지 — 살아남아라.<br><br>
+    <span class="cmd">C:\&gt; RUN CRUNCH_NIGHT.EXE</span> <span class="caret"></span>
+  </div>
+
+  <footer>
+    2PG Arcade 1.44MB 게임 공모전 출품작 · 영상의 모든 장면은 실제 인게임 화면입니다.<br>
+    글꼴: Galmuri (SIL OFL 1.1)
+  </footer>
+</body>
+</html>
