@@ -14,13 +14,23 @@
 <meta property="og:video:width" content="1280">
 <meta property="og:video:height" content="720">
 <style>
+  /* 갈무리 Galmuri — SIL Open Font License 1.1 (OFL.txt). 페이지에 쓰인 글자만 서브셋 */
+  @font-face {
+    font-family:"GalmuriWeb"; src:url("galmuri9.woff2") format("woff2");
+    font-weight:400; font-display:swap;
+  }
+  @font-face {
+    font-family:"GalmuriWeb"; src:url("galmuri11b.woff2") format("woff2");
+    font-weight:700; font-display:swap;
+  }
   :root { --green:#5aeba9; --dim:#8cc8b9; --bg:#04070c; --panel:#0a1018; }
   * { box-sizing:border-box; margin:0; padding:0; }
   body {
     background:var(--bg); color:var(--dim);
-    font-family:"DungGeunMo","Galmuri11",ui-monospace,Consolas,"Malgun Gothic",monospace;
+    font-family:"GalmuriWeb","DungGeunMo","Galmuri11",ui-monospace,Consolas,"Malgun Gothic",monospace;
     min-height:100vh; display:flex; flex-direction:column; align-items:center;
     padding:32px 16px 48px;
+    -webkit-text-size-adjust:100%;
   }
   /* CRT 배경 스캔라인 */
   body::before {
@@ -67,7 +77,7 @@
       <span class="dot" style="background:#ff5f56"></span>
       <span class="dot" style="background:#ffbd2e"></span>
       <span class="dot" style="background:#27c93f"></span>
-      <span>promo.mp4 — 01:03 · 1280x720 · 실제 게임플레이 포함</span>
+      <span>promo.mp4 — 00:35 · 1080p 60fps · 실제 게임플레이</span>
     </div>
     <video src="promo.mp4" poster="poster.jpg" controls playsinline preload="metadata"></video>
   </div>
